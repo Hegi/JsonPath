@@ -82,12 +82,12 @@ public interface ReadContext {
      *
      * Sample code to create a TypeRef
      * <code>
-     *       TypeRef ref = new TypeRef<List<Integer>>() {};
+     *       TypeRef ref = new TypeRef&lt;List&lt;Integer&gt;&gt;() {};
      * </code>
      *
      * @param path path to apply
      * @param typeRef  expected return type (will try to map)
-     * @param <T>
+     * @param <T> generic type reference
      * @return result
      */
     <T> T read(JsonPath path, TypeRef<T> typeRef);
@@ -97,7 +97,7 @@ public interface ReadContext {
      *
      * Sample code to create a TypeRef
      * <code>
-     *       TypeRef ref = new TypeRef<List<Integer>>() {};
+     *       TypeRef ref = new TypeRef&lt;List&lt;Integer&gt;&gt;() {};
      * </code>
      *
      * @param path path to apply

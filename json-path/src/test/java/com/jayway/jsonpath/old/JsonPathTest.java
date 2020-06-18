@@ -168,7 +168,7 @@ public class JsonPathTest extends BaseTest {
     public void filter_an_array_on_index() throws Exception {
         Integer matches = JsonPath.read(ARRAY, "$.[1].value");
 
-        assertEquals(new Integer(2), matches);
+        assertEquals(Integer.valueOf(2), matches);
     }
 
     @Test

@@ -324,7 +324,7 @@ public final class Utils {
      * validating according to an arbitrary boolean expression, such as validating a
      * primitive number or using your own custom validation expression.</p>
      * <p/>
-     * <pre>Validate.isTrue(i > 0.0, "The value must be greater than zero: %d", i);</pre>
+     * <pre>Validate.isTrue(i &gt; 0.0, "The value must be greater than zero: %d", i);</pre>
      * <p/>
      * <p>For performance reasons, the long value is passed as a separate parameter and
      * appended to the exception message only in the case of an error.</p>

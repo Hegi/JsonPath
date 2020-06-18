@@ -22,7 +22,7 @@ import java.lang.reflect.Type;
  * Used to specify generic type information in {@link com.jayway.jsonpath.ReadContext}
  *
  * <code>
- *       TypeRef ref = new TypeRef<List<Integer>>() { };
+ *       TypeRef ref = new TypeRef&lt;List&lt;Integer&gt;&gt;() { };
  * </code>
  *
  * @param <T>

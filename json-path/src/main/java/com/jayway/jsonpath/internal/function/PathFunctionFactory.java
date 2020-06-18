@@ -69,7 +69,7 @@ public class PathFunctionFactory {
             throw new InvalidPathException("Function with name: " + name + " does not exist.");
         } else {
             try {
-                return (PathFunction)functionClazz.newInstance();
+                return (PathFunction)functionClazz.getDeclaredConstructor().newInstance();
             } catch (Exception e) {
                 throw new InvalidPathException("Function of name: " + name + " cannot be created", e);
             }

@@ -278,8 +278,8 @@ public class IssuesTest extends BaseTest {
 
         List<Double> result = read(json, "$.datapoints.[*].[0]");
 
-        assertThat(result.get(0), is(new Double(10.1)));
-        assertThat(result.get(1), is(new Double(21.0)));
+        assertThat(result.get(0), is(10.1));
+        assertThat(result.get(1), is(21.0));
     }
 
     @Test

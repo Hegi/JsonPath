@@ -68,7 +68,7 @@ public class IsJsonTest {
         assertThat(new Object(), not(isJson()));
         assertThat(new Object[]{}, not(isJson()));
         assertThat("hi there", not(isJson()));
-        assertThat(new Integer(42), not(isJson()));
+        assertThat(42, not(isJson()));
         assertThat(Boolean.TRUE, not(isJson()));
         assertThat(false, not(isJson()));
         assertThat(null, not(isJson()));

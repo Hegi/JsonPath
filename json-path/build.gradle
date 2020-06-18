@@ -105,3 +105,9 @@ task dist(){
 }
 dist.dependsOn distZip
 dist.dependsOn distTar
+
+//tasks.withType(JavaCompile) {
+//    options.compilerArgs << '-Xlint:deprecation'
+//    options.compilerArgs << '-Xlint:unchecked'
+//    options.deprecation = true
+//}
